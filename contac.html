@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Exam Form</h2>
+    <form action="#" method="post">
+        
+        <!-- Student Details -->
+        <div class="form-group">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student-name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exam-date">Exam Date:</label>
+            <input type="date" id="exam-date" name="exam-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exam-time">Exam Time:</label>
+            <input type="time" id="exam-time" name="exam-time" required>
+        </div>
+        
+        <!-- Questions -->
+        <div class="question">
+            <p><strong>1. what does CSS stand for?</strong></p>
+            <label><input type="radio" name="q1" value="a"> A) cascading style scripts</label><br>
+            <label><input type="radio" name="q1" value="b"> B) cascading style sheets</label><br>
+            <label><input type="radio" name="q1" value="c"> C) colorful style sheets</label><br>
+            <label><input type="radio" name="q1" value="d"> D) creative style sheets</label>
+        </div>
+
+        <div class="question">
+            <p><strong>2. Which of the following is a programming language?</strong></p>
+            <label><input type="radio" name="q2" value="a"> A) HTML</label><br>
+            <label><input type="radio" name="q2" value="b"> B) CSS</label><br>
+            <label><input type="radio" name="q2" value="c"> C) Python</label><br>
+            <label><input type="radio" name="q2" value="d"> D) None of the above</label>
+        </div>
+
+        <div class="question">
+            <p><strong>3. which is the correct syntax for an HTML comment?</strong></p>
+            <label><input type="radio" name="q3" value="a"> A) # comment</label><br>
+            <label><input type="radio" name="q3" value="b"> B) /**commnet **/</label><br>
+            <label><input type="radio" name="q3" value="c"> C) /*comment */</label><br>
+            <label><input type="radio" name="q3" value="d"> D) none of the above</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Submit Exam</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
